@@ -11,7 +11,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copiar el código de la aplicación
-COPY app.py .
+COPY app_core.py .
 
 # Comando para ejecutar la aplicación
 CMD ["python", "app_core.py"]
